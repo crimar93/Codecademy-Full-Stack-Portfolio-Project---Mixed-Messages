@@ -6,7 +6,7 @@ Goal: Generate randomized messages with at least 3 unique components
 
 //Imports
 const { verbs, nouns, adjectives, adverbs } = require('./words'); //Import word lists
-const { toKillAMockingbird, mrRosewater, onTheRoad, chronologyOfWater, dune } = require('./stories'); //Import story exerpts
+const stories = require('./stories'); //Import story exerpts
 
 //Functions
 const pickWord = wordList => wordList[Math.floor(Math.random() * wordList.length)]; //Pick a random word from a list
