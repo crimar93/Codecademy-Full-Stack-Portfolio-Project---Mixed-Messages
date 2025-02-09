@@ -54,7 +54,7 @@ function generateStory(template) {
 const choice = readlineSync.question("Choose a story (1-5): ");
 
 if (choice >= 1 && choice <= 5) {
-  console.log(stories[choice]);
+  console.log(generateStory(stories[choice]));
 } else {
   console.log("Invalid selection.");
 }
